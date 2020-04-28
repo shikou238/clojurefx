@@ -1,0 +1,47 @@
+
+A up/down select
+
+Cm S 9 wrap with ()
+Cm S 7 wrap with ""
+Cm   [ wrap with []
+Cm S [ wrap with {}
+
+Cm right/left move to end/start parentheses
+
+Sh  Cm j barf forward      (a b c d e f) ->  (a b c d e) f
+Sh  Cm k slurp forward     (a b c d e) f ->  (a b c d e f)
+
+Ct Cm j slurp backward    a (b c d e f) ->  (a b c d e f)
+Ct Cm k barf backward     (a b c d e f) ->  a (b c d e f)
+
+Al s splice (a b c) -> a b c
+
+Al       F7
+Cm Al    F7
+Sh Al Cm F7
+
+Cm e    recent open file
+Sh Cm e recent edit file
+
+Cm F12 File Structure
+
+Cm up navigation bar
+
+method jump (default Ct up/down)
+
+Sh Cm o jump to a file by name
+Al Cm o jump to a symbol by name
+
+Al F1 select action of current file
+
+
+Cm p parameter info
+
+F1/Ct j quick doc
+Al SPC/Cm y view source
+
+Al Cm l reformat current file
+
+Al RET configure macro indent
+
+Sh Cm l load repl
